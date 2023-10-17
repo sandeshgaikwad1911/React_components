@@ -1,0 +1,63 @@
+.app{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.products{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 200px;
+    aspect-ratio: 1/1.3;
+    border-radius: 10px;
+    border: 5px solid grey;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 400px){
+    .product{
+        width: 300px;
+        aspect-ratio: 1/1.2;
+    }
+}
+
+.pagination{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination span{
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+.pagination span.active{
+    background-color: white;
+    color: black;
+}
+.pagination span:hover{
+    background-color: white;
+    color: black;
+}
+.disabled_pagination{
+    opacity: 0.1;
+    cursor: none !important;
+}
