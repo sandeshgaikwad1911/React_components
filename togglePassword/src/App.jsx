@@ -21,7 +21,7 @@ function App() {
           open ? <AiFillEyeInvisible onClick={()=>setOpen(!open)}/> : <AiFillEye onClick={()=>setOpen(!open)}/>
         }
       </div>
-      
+
     </div>
   )
 }
