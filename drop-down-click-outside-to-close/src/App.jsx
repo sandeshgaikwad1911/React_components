@@ -19,7 +19,7 @@ function App() {
   })
 
   const handleClick = (e) => {
-    console.log('e', e.target)
+    console.log('e', e.target === div2Ref.current)
     if (e.target !== div2Ref.current && e.target !== div1Ref.current) {
       setOpen(false);
     }
@@ -42,7 +42,7 @@ function App() {
 
         <div className="menu_container">
           {open && (
-            <div className="menus" ref={div2Ref}>
+            <div className="menus" ref={div2Ref} style={{padding: '50px'}}>
               <ul>
                 {menus.map((menu, index) => (
                   <li key={index}>{menu}</li>

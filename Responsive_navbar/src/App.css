@@ -1,0 +1,78 @@
+nav{
+    height: 48px;
+    padding: 0 20px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 10px;
+}
+
+.mobileIcon{
+    display: none;
+    z-index: 1000;
+}
+
+nav{
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .mobileIcon{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 48px;  /* 480px  because we have navbar 48px in height*/
+        left: -100%;
+        flex-direction: column;
+
+        width: 200px;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        overflow: auto;
+
+        transition: all .5s ease-in-out;
+    }
+    .mobile-menu{
+        left: 0;
+    }
+
+    ul li{
+        padding:5px 10px;
+    }
+    ul li:hover{
+        background-color: grey;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+
+ul li a{
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .mobileIcon{
+        background-color: white;
+        color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+ul{
+    border: 1px solid red;
+}
