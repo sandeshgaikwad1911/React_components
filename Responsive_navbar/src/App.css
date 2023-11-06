@@ -17,6 +17,7 @@ nav{
 .mobileIcon{
     display: none;
     z-index: 1000;
+    cursor: pointer;
 }
 
 nav{
@@ -39,7 +40,7 @@ nav{
         color: white;
         overflow: auto;
 
-        transition: all .5s ease-in-out;
+        transition: all .3s ease-in-out;
     }
     .mobile-menu{
         left: 0;
@@ -47,6 +48,7 @@ nav{
 
     ul li{
         padding:5px 10px;
+        cursor: pointer;
     }
     ul li:hover{
         background-color: grey;
@@ -71,8 +73,4 @@ ul li a{
         align-items: center;
         justify-content: center;
     }
-}
-
-ul{
-    border: 1px solid red;
 }
