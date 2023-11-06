@@ -1,0 +1,52 @@
+.app{
+  margin: 3rem auto;
+}
+
+.tabs{
+  display: flex;
+  gap: 10px;
+  border: 1px solid red;
+  padding: 20px;
+  background-color: lightblue;
+
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+
+  margin-bottom: 2px;
+}
+.tab_items{
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.active{
+  background-color: orangered;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.tab_items:hover{
+  background-color: orangered;
+  color: white;
+}
+
+.content{
+  display: none;
+}
+
+.show_content{
+  display: block;
+
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+
+  padding: 16px;
+  border: 1px solid red;
+  background-color: rgb(219, 67, 11);
+  color: white;
+}
