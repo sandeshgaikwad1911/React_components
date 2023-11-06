@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 
 function App() {
+  
   const [open, setOpen] = useState(false);
 
   const menus = ["Settings", "Profile", "Logout"];
