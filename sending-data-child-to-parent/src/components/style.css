@@ -1,0 +1,12 @@
+.parent, .child {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.child{
+    margin-top: 50px;
+}
+input, button{
+    outline: none;
+    padding: 5px;
+}
