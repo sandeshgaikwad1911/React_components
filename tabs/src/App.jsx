@@ -34,15 +34,15 @@ function App() {
       
       {/* <div className={tabId === 1 ? 'show_content' : 'hide_content'}>
         <h1>Html</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, culpa?</p>
+        <p>HTML is the standard markup language for Web pages.</p>
       </div>
       <div className={tabId === 2 ? 'show_content' : 'hide_content'}>
         <h1>Css</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, maxime?</p>
+        <p>CSS is the language we use to style an HTML document.</p>
       </div>
       <div className={tabId === 3 ? 'show_content' : 'hide_content'}>
         <h1>JavaScript</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, sequi.</p>
+        <p>JavaScript is the programming language of the Web.</p>
       </div> */}
 
       {
