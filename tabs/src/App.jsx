@@ -1,43 +1,59 @@
-
 import { useState } from 'react'
 import './App.css'
 
 function App() {
   
-  const Links = [
+  const Tabs = [
     {id: 1, name: 'Html'},
     {id: 2, name: "CSS"},
     {id: 3, name: "Javascript"}
   ]
 
-  const [toggleId, setToggleId] = useState(1)
+  const TabContent = [
+    {id: 1, title: "Html", content: "HTML is the standard markup language for Web pages."},
+    {id: 2, title: "Css", content: "CSS is the language we use to style an HTML document."},
+    {id: 3, title: "Javascript", content: "JavaScript is the programming language of the Web."}
+  ]
+
+  const [tabId, setTabId] = useState(1)
 
   const toggleTab = (id)=>{
     // console.log(id)
-    setToggleId(id)
+    setTabId(id)
   }
 
   return (
     <div className='app'>
       <ul className='tabs'>
           {
-            Links.map((link)=>(
-              <li key={link.id} className={link.id === toggleId ? 'tab_itmes active': 'tab_items'} onClick={()=>toggleTab(link.id)}>{link.name}</li>
+            Tabs.map((tab)=>(
+              <li key={tab.id} className={tab.id === tabId ? 'tab_itmes activeTab' : 'tab_items'} onClick={()=>toggleTab(tab.id)}>{tab.name}</li>
             ))
           }
       </ul>
-      <div className={toggleId === 1 ? 'show_content' : 'content'}>
+      
+      {/* <div className={tabId === 1 ? 'show_content' : 'hide_content'}>
         <h1>Html</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, culpa?</p>
       </div>
-      <div className={toggleId === 2 ? 'show_content' : 'content'}>
+      <div className={tabId === 2 ? 'show_content' : 'hide_content'}>
         <h1>Css</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, maxime?</p>
       </div>
-      <div className={toggleId === 3 ? 'show_content' : 'content'}>
+      <div className={tabId === 3 ? 'show_content' : 'hide_content'}>
         <h1>JavaScript</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, sequi.</p>
-      </div>
+      </div> */}
+
+      {
+        TabContent.filter((content)=>content.id === tabId).map((item)=>(
+          <div key={item.id} className='show_content'>
+            <h1>{item.title}</h1>
+            <p>{item.content}</p>
+          </div>
+        ))
+      }
+
     </div>
   )
 }

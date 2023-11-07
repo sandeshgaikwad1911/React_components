@@ -22,19 +22,19 @@
   cursor: pointer;
   border-radius: 15px;
 }
-.active{
+.tab_items:hover{
+  background-color: orangered;
+  color: white;
+}
+.activeTab{
   background-color: orangered;
   padding: 5px 10px;
   color: white;
   cursor: pointer;
   border-radius: 15px;
 }
-.tab_items:hover{
-  background-color: orangered;
-  color: white;
-}
 
-.content{
+.hide_content{
   display: none;
 }
 
@@ -50,3 +50,7 @@
   background-color: rgb(219, 67, 11);
   color: white;
 }
+
+
+
+/* ------------------------------------------------- */
