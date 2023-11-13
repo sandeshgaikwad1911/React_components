@@ -8,3 +8,18 @@
   padding: 20px;
   border: 1px solid red;
 }
+
+.radio-options{
+  display: flex;
+  align-items: center;
+ justify-content: space-around;
+}
+
+.single-radio{
+  display: flex;
+  gap: 5px;
+}
+.selected{
+  margin-top: 10px;
+  padding: 10px;
+}
