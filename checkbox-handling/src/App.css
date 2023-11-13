@@ -1,0 +1,47 @@
+.app{
+  margin: 3rem auto;
+}
+.checkbox-handling{
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid red;
+  padding: 20px;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+button{
+  margin-top: 20px;
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.checkboxes-list{
+  min-width: 150px;
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.total{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+.total-title{
+  min-width: 150px;
+  padding: 5px;
+}
