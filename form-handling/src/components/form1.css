@@ -1,0 +1,53 @@
+.form1{
+    margin: 0 auto;
+    max-width: 400px;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+form{
+    margin: 10px 0;
+}
+
+input[type='text']{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+button{
+    padding: 5px 20px;
+    cursor: pointer;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    outline: none;
+}
+div{
+    margin: 10px 0;
+}
+select{
+    width: 50%;
+    padding: 5px;
+    outline: none;
+}
+.gender{
+    display: flex;
+    gap: 20px;
+}
+.gender div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.skills{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.skills-content{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
